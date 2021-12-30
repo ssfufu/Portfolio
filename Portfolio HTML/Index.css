@@ -1,0 +1,542 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*------------------------ HEADER ---------------- */
+
+.nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    top: 0;
+    background-color: rgb(220, 220, 220);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Audiowide';
+    z-index: 9999;
+    font-size: 1vw;
+}
+
+.nav__item a {
+    display: inline-block;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: rgb(21, 14, 210);
+}
+
+.nav li {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* --------------------- BODY ------------------ */
+
+
+/*------------EXPERIENCES-----------*/
+
+.exp_text {
+    width: 35vw;
+    float: right;
+    padding-right: 1vw;
+    font-size: 3vh;
+    color: white;
+    margin-top: 20vh;
+    transform: translateY(-50%);
+}
+
+.exp_2_text {
+    width: 35vw;
+    float: right;
+    padding-right: 2vw;
+    font-size: 3vh;
+    color: white;
+    margin-top: -65vh;
+}
+
+.exp_2_text p {
+    padding-bottom: 5vh;
+}
+
+#ppt {
+    width: 1186px;
+    display: inline;
+    position: relative;
+    top: 10vh;
+}
+
+#exp2 {
+    width: 100vw;
+    position: relative;
+    top: 6vh;
+    float: right;
+    display: none;
+    vertical-align: middle;
+}
+
+.img_section {
+    height: 80vh;
+    width: 62vw;
+    overflow-y: scroll;
+    margin: 0 0;
+}
+
+.img_section::-webkit-scrollbar {
+    display: none;
+}
+
+.img_section li {
+    width: 62vw;
+}
+
+.img_section ul {
+    width: 62vw;
+    list-style: none;
+}
+
+.img_section img {
+    width: 62vw;
+}
+
+.container {
+    width: 10vw;
+    height: 4vh;
+    position: absolute;
+    right: 13vw;
+    top: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4aa7ff;
+    outline: none;
+    transition: 5s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgb(255, 0, 0);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 2s ease-in-out;
+}
+
+.btn:hover {
+    transition: 2s ease-in-out;
+    background: rgb(21, 14, 210);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 3vh;
+    border: none;
+}
+
+
+/* ----------Main----------*/
+
+main {
+    height: 94vh;
+    background: url(pics/1stBC.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+}
+
+.main_bottom {
+    width: 50VW;
+    float: right;
+    border-top: 1px solid #ccc;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.308);
+    text-align: justify;
+}
+
+.main_bottom p {
+    color: white;
+    text-align: right;
+    font-weight: 500;
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.main_top_img {
+    float: right;
+    margin-top: -200px;
+    position: relative;
+    top: 25px;
+    right: 250px;
+}
+
+.main_top h1 {
+    padding-top: 4vh;
+}
+
+.main_top ul {
+    color: white;
+    list-style-type: none;
+}
+
+.main_top ul li {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* -------------------- RESPONSIVE -----------------*/
+
+
+/* --------------------DEPUIS 1501px------------*/
+
+@media (min-width: 1501px) {
+    body {
+        overflow-x: hidden;
+        background-color: black;
+    }
+    main {
+        padding: 0;
+    }
+    /*------NAV GLOBAL-----*/
+    .nav__title {
+        margin-left: 2vw;
+        text-decoration: none;
+    }
+    .nav__title a {
+        text-decoration: none;
+        color: rgb(21, 14, 210);
+    }
+    .nav__item {
+        margin: 0px 1.5vw;
+    }
+    /*------PAGE ACCUEIL-----*/
+    .main_top {
+        width: 100vw;
+    }
+    .main_top ul {
+        width: 100vw;
+        padding-inline-start: 0px;
+        margin: 0 0;
+        padding-top: 4vh;
+        padding-left: 5vw;
+        font-size: 2.5vh;
+    }
+    .main_top h1 {
+        color: white;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-left: 3vw;
+        padding-top: 7vh;
+        font-weight: normal;
+        font-size: 6vh;
+    }
+    .main_bottom {
+        padding-right: 0vw;
+        font-size: 3vh;
+    }
+    /*-----CONTACT------*/
+    #Title {
+        color: white;
+        font-weight: normal;
+        font-size: 6vh;
+        border-bottom: 1px solid;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding: 5vh 0;
+        margin: 0 20vw;
+        text-align: center;
+    }
+    #Contacts {
+        padding-top: 5vh;
+        text-align: center;
+        color: white;
+        list-style: none;
+        font-size: 3vh;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    #Contacts li {
+        padding-top: 3vh;
+        color: white;
+        padding: 0 auto;
+    }
+    #Contacts li a {
+        border: 1px solid white;
+        border-radius: 0.5vh;
+        text-decoration-line: none;
+        color: white;
+        padding: 2vh 3vw;
+    }
+    #Contacts img {
+        width: 5vh;
+        position: relative;
+        top: 2vh;
+        right: 2vw;
+    }
+    #discord {
+        position: relative;
+        right: 1.5vw;
+        top: 5vh;
+        padding-bottom: 2vh;
+        padding-left: 3vw;
+    }
+    #phone {
+        position: relative;
+        top: 12vh;
+    }
+}
+
+
+/* --------------------JUSQU'A 1500px------------*/
+
+@media (max-width: 1500px) {
+    body {
+        background-color: black;
+        width: auto;
+    }
+    /*------NAV GLOBAL-----*/
+    .nav__title {
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    .nav__title a {
+        text-decoration: none;
+        color: rgb(21, 14, 210);
+        font-size: 1.5vw;
+    }
+    .nav__item {
+        margin: 0px 15px;
+        font-size: 1.5vw;
+    }
+    /*------PAGE ACCUEIL-----*/
+    .main_top h1 {
+        color: white;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-left: 5vw;
+        padding-top: 7vh;
+        font-weight: normal;
+        font-size: 5vh;
+    }
+    .main_top ul {
+        padding-top: 4vh;
+        padding-left: 8vw;
+    }
+    .main_bottom {
+        padding-right: 5vw;
+    }
+    .main_bottom p {
+        font-size: 3vh;
+    }
+    /*-----CONTACT------*/
+    #Title {
+        color: white;
+        font-weight: normal;
+        font-size: 6vh;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+    #Contacts {
+        text-align: center;
+        color: white;
+        list-style: none;
+        font-size: 3vh;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    #Contacts li {
+        padding-top: 3vh;
+        color: white;
+        padding: 0 auto;
+    }
+    #Contacts li a {
+        border: 1px solid white;
+        border-radius: 0.5vh;
+        text-decoration-line: none;
+        color: white;
+        padding: 2vh 3vw;
+    }
+    #Contacts img {
+        width: 5vh;
+        position: relative;
+        top: 2vh;
+        right: 2vw;
+    }
+    #discord {
+        position: relative;
+        right: 1.5vw;
+        padding-bottom: 2vh;
+        padding-left: 3vw;
+    }
+    #phone {
+        position: relative;
+        top: 1vh;
+    }
+}
+
+@media (max-width: 1094px) {
+    .main_bottom {
+        padding-right: 5vw;
+    }
+    .main_bottom p {
+        font-size: 2vh;
+    }
+}
+
+
+/* --------------------JUSQU'A 768px------------*/
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background-color: black;
+    }
+    /*------NAV GLOBAL-----*/
+    .nav__title {
+        margin-left: 20px;
+    }
+    .nav__title a {
+        text-decoration: none;
+        color: rgb(21, 14, 210);
+        font-size: 2vw;
+    }
+    .nav__item {
+        margin: 0px 5px;
+        font-size: 2vw;
+    }
+    /*------PAGE ACCUEIL-----*/
+    .main_bottom {
+        width: 75vw;
+        margin: 3vh;
+    }
+    .main_bottom p {
+        text-align: center;
+        padding-top: 1vh;
+    }
+    .main_top h1 {
+        color: white;
+        padding-left: 3vw;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .main_top_img {
+        right: 8vw;
+    }
+}
+
+
+/* --------------------JUSQU'A 600px------------*/
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background-color: black;
+        overflow-y: hidden;
+    }
+    /*------NAV GLOBAL-----*/
+    .nav {
+        font-size: 2vw;
+    }
+    .nav__title a {
+        text-decoration: none;
+        color: rgb(21, 14, 210);
+    }
+    /*------PAGE ACCUEIL-----*/
+    main {
+        height: 100vh;
+    }
+    .main_top_img {
+        display: none;
+    }
+    .main_bottom {
+        width: 40vh;
+        float: none;
+        margin: 7vh auto;
+        border-top: 1px solid #ccc;
+    }
+    .main_bottom p {
+        color: white;
+        text-align: center;
+        margin-top: 3vh;
+        font-size: 2vw;
+    }
+    .main_top h1 {
+        margin: auto auto;
+        text-align: center;
+    }
+    .main_top ul {
+        width: 50vw;
+        text-align: center;
+        margin: 5vh auto;
+        padding-bottom: 2vh;
+        padding-inline-start: 0px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}
+
+
+/* --------------------JUSQU'A 460px------------*/
+
+@media (max-width: 460px) {
+    /*------NAV GLOBAL-----*/
+    .nav__item {
+        margin: 0 10px;
+    }
+    .nav__title a {
+        text-decoration: none;
+        color: rgb(21, 14, 210);
+    }
+    /*------PAGE ACCUEIL-----*/
+    .main_top li {
+        margin: 3vh auto;
+    }
+    .main_top ul {
+        width: 90vw;
+        padding: 0 0;
+    }
+    .main_bottom {
+        width: 75vw;
+    }
+}

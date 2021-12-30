@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Voilà ma super page">
+    <title>Portfolio - Mathieu Medinas</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <div class="nav__title"><a href="index.html">Home</a></div>
+
+        <ul class="nav__list">
+            <li class="nav__item"><a href="experiences.html">Experiences</a></li>
+            <li class="nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <div id="Btn">
+            <div class="container">
+                <div class="center">
+                    <button onclick="maybe()" class="btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                        <span>N E X T</span>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <section id="exp">
+            <div id="ppt">
+                <iframe src="https://onedrive.live.com/embed?cid=869FBCE1C8E6BDD6&amp;resid=869FBCE1C8E6BDD6%2144669&amp;authkey=AAUZT2Pso4SF-jU&amp;em=2&amp;wdAr=1.7763888888888888" width="1186px" height="692px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec 
+                        <a target="_blank" href="https://office.com/webapps">Office</a>.
+                    </iframe>
+            </div>
+            <article class="exp_text animate__animated animate__backInDown">
+
+                <p>I have made a quick project during High School, and that was a carter for a 3D printer.</p>
+
+                <p>The goal of that carter was to regulate the printing process (overheating, wire shortage etc.), give the user the capacity to oversee and stop it whenever he wants. All the data was sent to a server, where a website was displaying it.</p>
+
+                <p>Sadly I couldn't recover all the data from this project, mainly because I no longer have the computer that I used to create it, so the presentation on the left is incomplete.</p>
+
+            </article>
+        </section>
+
+        <section id="exp2">
+
+            <div class="img_section">
+                <ul>
+                    <li><img src="pics/VGame.png"></li>
+                    <li><img src="pics/ScriptTourelle.png"></li>
+                    <li><img src="pics/scriptVagues.png"></li>
+                    <li><img src="pics/scriptVagues_2.png"></li>
+                    <li><img src="pics/scriptBalles.PNG"></li>
+                </ul>
+            </div>
+
+            <article class="exp_2_text animate__animated animate__backInDown">
+
+                <p>During the 3 first weeks of this year, I had to develop a Tower-Defense game from scratch.</p>
+
+                <p>I wanted a Cyberpunk design, I like this universe a lot. Lots of cold neon lights and futuristic tech design.</p>
+
+                <p>Because I can't implement my game into my portfolio, I am going to show you a screenshot of it and some of the programms I developped.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
