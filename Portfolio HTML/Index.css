@@ -66,6 +66,9 @@ body {
     text-align: center;
     font-weight: normal;
     font-size: 5vh;
+    border: 2px solid;
+    border-color: rgb(21, 14, 210);
+    border-radius: 25px;
 }
 
 .exp_2_text p {
