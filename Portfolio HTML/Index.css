@@ -69,10 +69,41 @@ body {
     border: 2px solid;
     border-color: rgb(21, 14, 210);
     border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.39);
 }
 
 .exp_2_text p {
     padding-bottom: 5vh;
+}
+
+aside {
+    position: relative;
+    bottom: -42.5vh;
+    left: 2vw;
+}
+
+#CV {
+    padding: 1vw 1vw;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(21, 14, 210, 0.534);
+    transition: 0.3s;
+}
+
+#CV:hover {
+    color: #ffffff;
+    border: #ffffff solid 1px;
+    background: rgb(0, 38, 255);
+}
+
+#Contacts a:hover {
+    background-color: rgba(21, 14, 210, 0.534);
+}
+
+#Contacts a {
+    transition: 0.3s;
 }
 
 #ppt {
