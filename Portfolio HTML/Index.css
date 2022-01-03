@@ -43,6 +43,14 @@ body {
 
 /*------------EXPERIENCES-----------*/
 
+iframe{
+    position: relative;
+    top: 5vh;
+    aspect-ratio: 16/9;
+    width: 60%;
+    padding-left: 2vw;
+}
+
 .exp_text {
     width: 35vw;
     float: right;
