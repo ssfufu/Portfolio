@@ -38,10 +38,14 @@ function PptHide() {
 var pExp = document.getElementById('exp');
 var pExp2 = document.getElementById('exp2');
 var Button1 = document.getElementById('Btn');
+var cards = document.getElementById('exp-cards');
+cards.style.display = 'none';
+
 
 function maybe() {
     pExp.style.display = 'none';
     pExp2.style.display = 'block';
+    cards.style.display = 'none';
     Button1.style.display = 'none';
 }
 
