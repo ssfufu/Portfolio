@@ -1,9 +1,10 @@
 body {
-    margin: 0;
     border: 0;
+    margin: 0;
     padding: 0;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
 }
 
 
@@ -14,21 +15,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6vh;
+    height: 8vh;
     top: 0;
-    background-color: rgb(220, 220, 220);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     font-family: 'Audiowide';
     z-index: 9999;
     font-size: 1vw;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,ffffff+100&1+0,1+25,0+100 */
+    background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(242,242,242,1) 25%, rgba(238,238,238,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(242,242,242,1) 25%,rgba(238,238,238,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(242,242,242,1) 25%,rgba(238,238,238,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.nav__title img {
+    height:60px;
+    margin-top: 5px;
 }
 
 .nav__item a {
     display: inline-block;
     margin: 0px 30px;
     text-decoration: none;
-    color: rgb(21, 14, 210);
+    color: rgb(200,200,200);
 }
 
 .nav li {
@@ -45,19 +53,19 @@ body {
 
 iframe{
     position: relative;
-    top: 5vh;
+    top: 2vh;
     aspect-ratio: 16/9;
     width: 60%;
     padding-left: 2vw;
 }
 
 .exp_text {
-    width: 35vw;
+    width: 32.5vw;
     float: right;
-    padding-right: 1vw;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     margin-top: 20vh;
+    margin-right: 2vw;
     transform: translateY(-50%);
 }
 
@@ -120,6 +128,7 @@ aside {
     position: relative;
     top: 10vh;
 }
+
 
 #exp2 {
     width: 100vw;
@@ -211,8 +220,8 @@ svg {
 /* ----------Main----------*/
 
 main {
-    height: 94vh;
-    background: url(pics/1stBC.jpg) no-repeat center center fixed;
+    height: 100vh;
+    background: url(pics/1stBC.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
